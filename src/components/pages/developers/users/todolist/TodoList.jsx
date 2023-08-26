@@ -1,4 +1,5 @@
 // import React from "react";
+import { FaTrash } from "react-icons/fa";
 
 const TodoList = ({ todos, checkTodoHandler, deleteTodoHandler }) => {
   return (
@@ -24,7 +25,7 @@ const TodoList = ({ todos, checkTodoHandler, deleteTodoHandler }) => {
                     onClick={() => deleteTodoHandler(todo.id)}
                     className="btn btn--alert"
                   >
-                    Delete
+                    <FaTrash />
                   </button>
                 </div>
               </div>
